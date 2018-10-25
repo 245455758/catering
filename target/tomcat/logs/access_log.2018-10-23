@@ -58,3 +58,8 @@
 0:0:0:0:0:0:0:1 - - [23/Oct/2018:09:47:24 +0800] "GET /js/axios.min.js HTTP/1.1" 304 - http-bio-8090-exec-3 231
 0:0:0:0:0:0:0:1 - - [23/Oct/2018:09:47:24 +0800] "GET /js/axios.min.map HTTP/1.1" 404 983 http-bio-8090-exec-4 7
 0:0:0:0:0:0:0:1 - - [23/Oct/2018:09:47:26 +0800] "POST /api/submit.action HTTP/1.1" 200 99 http-bio-8090-exec-5 1757
+0:0:0:0:0:0:0:1 - - [23/Oct/2018:18:30:49 +0800] "GET /Test.html HTTP/1.1" 304 - http-bio-8090-exec-1 160
+0:0:0:0:0:0:0:1 - - [23/Oct/2018:18:30:49 +0800] "GET /js/axios.min.js HTTP/1.1" 304 - http-bio-8090-exec-3 58
+0:0:0:0:0:0:0:1 - - [23/Oct/2018:18:30:49 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8090-exec-2 16
+0:0:0:0:0:0:0:1 - - [23/Oct/2018:18:30:51 +0800] "GET /js/axios.min.map HTTP/1.1" 404 983 http-bio-8090-exec-5 0
+0:0:0:0:0:0:0:1 - - [23/Oct/2018:18:30:51 +0800] "POST /api/submit.action HTTP/1.1" 200 99 http-bio-8090-exec-4 2389

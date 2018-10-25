@@ -88,9 +88,14 @@
     from role
     where id = #{id,jdbcType=INTEGER}
   </select>
+  
   <select id="selectRightsById" resultType="java.lang.String" parameterType="java.lang.Integer">
   	SELECT rights FROM role WHERE id = #{id};
   </select>
+  <select id="selectAllRoles" resultType="com.trouble.catering.pojo.Role">
+  	SELECT * FROM role 
+  </select>
+  
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from role
     where id = #{id,jdbcType=INTEGER}
@@ -101,11 +106,15 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.trouble.catering.pojo.Role" >
-    insert into role (id, name, desc, 
+  <insert id="insert"  parameterType="com.trouble.catering.pojo.Role" >
+    insert into `role` (id, name, `desc`, 
       rights)
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{desc,jdbcType=VARCHAR}, 
       #{rights,jdbcType=VARCHAR})
+  </insert>
+  <insert id="add" parameterType="com.trouble.catering.pojo.Role" >
+    insert into `role` ( name, `desc`)
+    values ( #{name,jdbcType=VARCHAR}, #{desc,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.trouble.catering.pojo.Role" >
     insert into role
@@ -192,7 +201,7 @@
   <update id="updateByPrimaryKey" parameterType="com.trouble.catering.pojo.Role" >
     update role
     set name = #{name,jdbcType=VARCHAR},
-      desc = #{desc,jdbcType=VARCHAR},
+      `desc` = #{desc,jdbcType=VARCHAR},
       rights = #{rights,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>

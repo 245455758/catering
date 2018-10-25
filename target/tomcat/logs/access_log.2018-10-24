@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:00:09 +0800] "GET /role/showAll.action HTTP/1.1" 500 12631 http-bio-8090-exec-1 2605
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:00:10 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8090-exec-3 2
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:05:26 +0800] "GET /role/showAll.action HTTP/1.1" 500 12631 http-bio-8090-exec-1 2786
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:17:07 +0800] "GET /role/showAll.action HTTP/1.1" 200 - http-bio-8090-exec-1 2334
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:40:38 +0800] "GET /role/showAll.action HTTP/1.1" 500 4186 http-bio-8090-exec-1 2525
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:44:27 +0800] "GET /role/showAll.action HTTP/1.1" 200 - http-bio-8090-exec-1 3319
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:46:04 +0800] "GET /role/showAll.action HTTP/1.1" 200 - http-bio-8090-exec-1 2925
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:48:13 +0800] "GET /role/showAll.action HTTP/1.1" 200 710 http-bio-8090-exec-1 2346
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:20:29:12 +0800] "GET /role/add.action HTTP/1.1" 500 12071 http-bio-8090-exec-2 2791
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:20:33:30 +0800] "GET /role/add.action HTTP/1.1" 500 12043 http-bio-8090-exec-1 1980
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:20:38:50 +0800] "GET /role/add.action HTTP/1.1" 500 11775 http-bio-8090-exec-1 2140
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:20:44:27 +0800] "GET /role/add.action HTTP/1.1" 200 37 http-bio-8090-exec-3 2548
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:21:29:32 +0800] "GET /Test.html HTTP/1.1" 200 567 http-bio-8090-exec-1 90
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:21:29:32 +0800] "GET /js/axios.min.js HTTP/1.1" 304 - http-bio-8090-exec-3 159
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:21:29:35 +0800] "POST /role/add.action HTTP/1.1" 200 37 http-bio-8090-exec-4 2639
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:21:29:35 +0800] "GET /js/axios.min.map HTTP/1.1" 404 983 http-bio-8090-exec-5 5

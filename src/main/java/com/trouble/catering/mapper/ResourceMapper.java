@@ -19,6 +19,8 @@ public interface ResourceMapper {
     List<Resource> selectByExample(ResourceExample example);
 
     Resource selectByPrimaryKey(Integer id);
+    
+    List<Resource> selectAllIdAndName();
 
     int updateByExampleSelective(@Param("record") Resource record, @Param("example") ResourceExample example);
 

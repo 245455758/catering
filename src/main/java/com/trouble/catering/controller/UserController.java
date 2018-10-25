@@ -41,20 +41,21 @@ public class UserController {
 	
 	@RequestMapping("/submit")
 	@ResponseBody
-	public Map login(@RequestBody String name) {
+	public Object login(@RequestBody String name) {
 		JSONObject jsonStr = JSON.parseObject(name);
 		User user = userService.userLogin(jsonStr.getString("name"), jsonStr.getString("password"));
-		System.out.println(user.getRole());
 		if(user!=null) {
 			Set rightsSet = roleService.getRights(user.getRole().intValue()+1);
 			Map map = new HashMap();
 			map.put("rights", rightsSet);
 			map.put("res", true);
-			return map;
+			Object json = JSON.toJSON(map);
+			return json;
 		}else {
 			Map map = new HashMap();
 			map.put("res", false);
-			return map;
+			Object json = JSON.toJSON(map);
+			return json;
 		}
 	}
 

@@ -1,6 +1,8 @@
 package com.trouble.catering.pojo;
 
-public class Goods {
+import java.io.Serializable;
+
+public class Goods implements Serializable{
     private Integer id;
 
     private String name;

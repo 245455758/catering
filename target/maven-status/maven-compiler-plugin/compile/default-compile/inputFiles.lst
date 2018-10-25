@@ -1,4 +1,5 @@
 G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\RoleExample.java
+G:\Java_program\catering1\src\main\java\com\trouble\catering\controller\RoleController.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\mapper\ShopMapper.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\Shop.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\mapper\GoodsMapper.java
@@ -7,6 +8,7 @@ G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\GoodsExample.j
 G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\ResourceExample.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\service\impl\UserServiceImpl.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\service\RoleService.java
+G:\Java_program\catering1\src\main\java\com\trouble\catering\entity\Result.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\Goods.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\mapper\RoleMapper.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\Role.java

@@ -3,7 +3,7 @@ package com.trouble.catering.pojo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GoodsExample {
+public class GoodsExample  {
     protected String orderByClause;
 
     protected boolean distinct;

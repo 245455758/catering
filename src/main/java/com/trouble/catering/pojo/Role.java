@@ -1,6 +1,8 @@
 package com.trouble.catering.pojo;
 
-public class Role {
+import java.io.Serializable;
+
+public class Role  implements Serializable{
     private Integer id;
 
     private String name;
@@ -40,4 +42,22 @@ public class Role {
     public void setRights(String rights) {
         this.rights = rights == null ? null : rights.trim();
     }
+
+	@Override
+	public String toString() {
+		return "Role [id=" + id + ", name=" + name + ", desc=" + desc + ", rights=" + rights + "]";
+	}
+
+	public Role(String name, String desc, String rights) {
+		super();
+		this.name = name;
+		this.desc = desc;
+		this.rights = rights;
+	}
+
+	public Role() {
+		super();
+	}
+    
+    
 }
