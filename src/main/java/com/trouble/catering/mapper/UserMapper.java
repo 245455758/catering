@@ -15,6 +15,10 @@ public interface UserMapper {
     int insert(User record);
 
     int insertSelective(User record);
+    
+    int validateUser(int id);
+    
+    int undoValidateUser(int id);
 
     List<User> selectByExample(UserExample example);
     

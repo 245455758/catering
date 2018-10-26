@@ -24,6 +24,8 @@ public interface ShopMapper {
 
     int updateByExample(@Param("record") Shop record, @Param("example") ShopExample example);
 
+    int updateInValidate(int id);
+    
     int updateByPrimaryKeySelective(Shop record);
 
     int updateByPrimaryKey(Shop record);

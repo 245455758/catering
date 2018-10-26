@@ -48,4 +48,10 @@ public interface UserService {
 	 * @return
 	 */
 	public String findPasswordById(int id);
+	/**
+	 * 审核用户
+	 * @param id
+	 * @return
+	 */
+	public int validateUser(int id);
 }

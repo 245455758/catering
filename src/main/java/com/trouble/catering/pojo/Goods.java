@@ -1,8 +1,6 @@
 package com.trouble.catering.pojo;
 
-import java.io.Serializable;
-
-public class Goods implements Serializable{
+public class Goods {
     private Integer id;
 
     private String name;
@@ -12,6 +10,10 @@ public class Goods implements Serializable{
     private String information;
 
     private Integer shopId;
+
+    private String picPath;
+
+    private Integer typeId;
 
     public Integer getId() {
         return id;
@@ -51,5 +53,21 @@ public class Goods implements Serializable{
 
     public void setShopId(Integer shopId) {
         this.shopId = shopId;
+    }
+
+    public String getPicPath() {
+        return picPath;
+    }
+
+    public void setPicPath(String picPath) {
+        this.picPath = picPath == null ? null : picPath.trim();
+    }
+
+    public Integer getTypeId() {
+        return typeId;
+    }
+
+    public void setTypeId(Integer typeId) {
+        this.typeId = typeId;
     }
 }

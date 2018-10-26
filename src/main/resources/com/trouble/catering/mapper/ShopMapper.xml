@@ -91,6 +91,11 @@
     from shop
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <update id="updateInValidate" parameterType="java.lang.Integer">
+  	update shop
+  	set status=1
+  	where id = #{id,jdbcType=INTEGER}
+  </update>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from shop
     where id = #{id,jdbcType=INTEGER}

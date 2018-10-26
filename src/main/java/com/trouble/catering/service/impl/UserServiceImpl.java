@@ -63,4 +63,9 @@ public class UserServiceImpl implements UserService {
 		return userMapper.selectPasswordById(id);
 	}
 
+	@Override
+	public int validateUser(int id) {
+		return userMapper.validateUser(id);
+	}
+
 }

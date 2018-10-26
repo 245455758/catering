@@ -3,7 +3,7 @@ package com.trouble.catering.pojo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GoodsExample  {
+public class GoodsExample {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -421,6 +421,136 @@ public class GoodsExample  {
 
         public Criteria andShopIdNotBetween(Integer value1, Integer value2) {
             addCriterion("shop_id not between", value1, value2, "shopId");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathIsNull() {
+            addCriterion("pic_Path is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathIsNotNull() {
+            addCriterion("pic_Path is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathEqualTo(String value) {
+            addCriterion("pic_Path =", value, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathNotEqualTo(String value) {
+            addCriterion("pic_Path <>", value, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathGreaterThan(String value) {
+            addCriterion("pic_Path >", value, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathGreaterThanOrEqualTo(String value) {
+            addCriterion("pic_Path >=", value, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathLessThan(String value) {
+            addCriterion("pic_Path <", value, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathLessThanOrEqualTo(String value) {
+            addCriterion("pic_Path <=", value, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathLike(String value) {
+            addCriterion("pic_Path like", value, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathNotLike(String value) {
+            addCriterion("pic_Path not like", value, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathIn(List<String> values) {
+            addCriterion("pic_Path in", values, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathNotIn(List<String> values) {
+            addCriterion("pic_Path not in", values, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathBetween(String value1, String value2) {
+            addCriterion("pic_Path between", value1, value2, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andPicPathNotBetween(String value1, String value2) {
+            addCriterion("pic_Path not between", value1, value2, "picPath");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdIsNull() {
+            addCriterion("type_id is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdIsNotNull() {
+            addCriterion("type_id is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdEqualTo(Integer value) {
+            addCriterion("type_id =", value, "typeId");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdNotEqualTo(Integer value) {
+            addCriterion("type_id <>", value, "typeId");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdGreaterThan(Integer value) {
+            addCriterion("type_id >", value, "typeId");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("type_id >=", value, "typeId");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdLessThan(Integer value) {
+            addCriterion("type_id <", value, "typeId");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdLessThanOrEqualTo(Integer value) {
+            addCriterion("type_id <=", value, "typeId");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdIn(List<Integer> values) {
+            addCriterion("type_id in", values, "typeId");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdNotIn(List<Integer> values) {
+            addCriterion("type_id not in", values, "typeId");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdBetween(Integer value1, Integer value2) {
+            addCriterion("type_id between", value1, value2, "typeId");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("type_id not between", value1, value2, "typeId");
             return (Criteria) this;
         }
     }
