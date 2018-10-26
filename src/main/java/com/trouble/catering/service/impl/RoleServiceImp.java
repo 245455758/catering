@@ -81,4 +81,9 @@ public class RoleServiceImp implements RoleService {
 		return roleMapper.deleteByPrimaryKey(key);
 	}
 
+	@Override
+	public List<Role> findAllIdAndDesc() {
+		return roleMapper.selectAllIdAndDesc();
+	}
+
 }

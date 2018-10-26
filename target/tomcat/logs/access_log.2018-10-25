@@ -32,3 +32,11 @@
 0:0:0:0:0:0:0:1 - - [25/Oct/2018:17:17:52 +0800] "GET /js/axios.min.js HTTP/1.1" 200 12941 http-bio-8090-exec-3 3
 0:0:0:0:0:0:0:1 - - [25/Oct/2018:17:17:52 +0800] "GET /js/axios.min.map HTTP/1.1" 404 983 http-bio-8090-exec-4 5
 0:0:0:0:0:0:0:1 - - [25/Oct/2018:17:17:54 +0800] "POST /role/addRole.action HTTP/1.1" 200 37 http-bio-8090-exec-5 1762
+0:0:0:0:0:0:0:1 - - [25/Oct/2018:19:44:00 +0800] "GET /api/findAll.action HTTP/1.1" 404 949 http-bio-8090-exec-1 4173
+0:0:0:0:0:0:0:1 - - [25/Oct/2018:19:44:16 +0800] "GET /api/showAll.action HTTP/1.1" 200 162 http-bio-8090-exec-4 1020
+0:0:0:0:0:0:0:1 - - [25/Oct/2018:19:50:29 +0800] "GET /api/showAll.action HTTP/1.1" 200 81 http-bio-8090-exec-1 2285
+0:0:0:0:0:0:0:1 - - [25/Oct/2018:19:58:56 +0800] "GET /api/showAll.action HTTP/1.1" 200 81 http-bio-8090-exec-1 2348
+0:0:0:0:0:0:0:1 - - [25/Oct/2018:19:59:40 +0800] "GET /api/showAll.action HTTP/1.1" 200 163 http-bio-8090-exec-4 11
+0:0:0:0:0:0:0:1 - - [25/Oct/2018:20:00:37 +0800] "GET /api/showAll.action HTTP/1.1" 200 180 http-bio-8090-exec-1 2570
+0:0:0:0:0:0:0:1 - - [25/Oct/2018:20:32:52 +0800] "GET /api/showAll.action HTTP/1.1" 200 706 http-bio-8090-exec-1 3222
+0:0:0:0:0:0:0:1 - - [25/Oct/2018:21:16:13 +0800] "GET /api/showAll.action HTTP/1.1" 200 710 http-bio-8090-exec-1 3452

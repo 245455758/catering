@@ -1,8 +1,6 @@
 package com.trouble.catering.pojo;
 
-import java.io.Serializable;
-
-public class User  implements Serializable{
+public class User {
     private Integer id;
 
     private String username;
@@ -11,7 +9,7 @@ public class User  implements Serializable{
 
     private String telephone;
 
-    private Integer role;
+    private String role;
 
     private Integer isvalidate;
 
@@ -47,12 +45,12 @@ public class User  implements Serializable{
         this.telephone = telephone == null ? null : telephone.trim();
     }
 
-    public Integer getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(Integer role) {
-        this.role = role;
+    public void setRole(String role) {
+        this.role = role == null ? null : role.trim();
     }
 
     public Integer getIsvalidate() {
@@ -62,4 +60,25 @@ public class User  implements Serializable{
     public void setIsvalidate(Integer isvalidate) {
         this.isvalidate = isvalidate;
     }
+
+	public User(String username, String password, String telephone, String role, Integer isvalidate) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.telephone = telephone;
+		this.role = role;
+		this.isvalidate = isvalidate;
+	}
+
+	public User() {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", telephone=" + telephone
+				+ ", role=" + role + ", isvalidate=" + isvalidate + "]";
+	}
+    
+    
 }

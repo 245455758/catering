@@ -20,6 +20,8 @@ public interface RoleMapper {
 
     List<Role> selectByExample(RoleExample example);
 
+    List<Role> selectAllIdAndDesc();
+    
     Role selectByPrimaryKey(Integer id);
     
     String selectRightsById(Integer id);

@@ -7,10 +7,11 @@
 <script>
     window.onload = function(){
         (
-            axios.post('/role/addRole.action',{
-            name:'商户管理员',
-            desc:'修改手拿狙击11',
-            idArr:['9']
+            axios.post('/shopper/showAllUnChecked.action',{
+            id:3,
+            username:'商户管理员',
+            telephone:'修改手拿狙击11',
+            role:[7,8]
         })
             .then(function(msg){
                 console.log(msg)

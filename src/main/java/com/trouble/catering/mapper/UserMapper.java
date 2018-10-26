@@ -17,8 +17,14 @@ public interface UserMapper {
     int insertSelective(User record);
 
     List<User> selectByExample(UserExample example);
+    
+    List<User> selectAllShoppers();
+    
+    List<User> selectAllUncheckedShoppers();
 
     User selectByPrimaryKey(Integer id);
+    
+    String selectPasswordById(Integer id);
 
     int updateByExampleSelective(@Param("record") User record, @Param("example") UserExample example);
 

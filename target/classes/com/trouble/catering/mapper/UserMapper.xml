@@ -6,7 +6,7 @@
     <result column="username" property="username" jdbcType="VARCHAR" />
     <result column="password" property="password" jdbcType="VARCHAR" />
     <result column="telephone" property="telephone" jdbcType="VARCHAR" />
-    <result column="role" property="role" jdbcType="INTEGER" />
+    <result column="role" property="role" jdbcType="VARCHAR" />
     <result column="isValidate" property="isvalidate" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Example_Where_Clause" >
@@ -90,6 +90,20 @@
     from user
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="selectPasswordById" resultType="java.lang.String" parameterType="java.lang.Integer">
+  	select password from user where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAllUncheckedShoppers" resultMap="BaseResultMap">
+  	SELECT * FROM USER WHERE 
+  	(role LIKE '2' OR  role LIKE "%,2" OR role LIKE "2,%" OR  role LIKE "%,2,%") 
+  	and isValidate=0;
+  </select>
+  <select id="selectAllShoppers" resultMap="BaseResultMap">
+  	SELECT * FROM USER WHERE 
+  	(role LIKE '2' OR  role LIKE "%,2" OR role LIKE "2,%" OR  role LIKE "%,2,%") 
+  	and isValidate=1;
+  </select>
+  
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from user
     where id = #{id,jdbcType=INTEGER}
@@ -105,7 +119,7 @@
       telephone, role, isValidate
       )
     values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{telephone,jdbcType=VARCHAR}, #{role,jdbcType=INTEGER}, #{isvalidate,jdbcType=INTEGER}
+      #{telephone,jdbcType=VARCHAR}, #{role,jdbcType=VARCHAR}, #{isvalidate,jdbcType=INTEGER}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.trouble.catering.pojo.User" >
@@ -144,7 +158,7 @@
         #{telephone,jdbcType=VARCHAR},
       </if>
       <if test="role != null" >
-        #{role,jdbcType=INTEGER},
+        #{role,jdbcType=VARCHAR},
       </if>
       <if test="isvalidate != null" >
         #{isvalidate,jdbcType=INTEGER},
@@ -173,7 +187,7 @@
         telephone = #{record.telephone,jdbcType=VARCHAR},
       </if>
       <if test="record.role != null" >
-        role = #{record.role,jdbcType=INTEGER},
+        role = #{record.role,jdbcType=VARCHAR},
       </if>
       <if test="record.isvalidate != null" >
         isValidate = #{record.isvalidate,jdbcType=INTEGER},
@@ -189,7 +203,7 @@
       username = #{record.username,jdbcType=VARCHAR},
       password = #{record.password,jdbcType=VARCHAR},
       telephone = #{record.telephone,jdbcType=VARCHAR},
-      role = #{record.role,jdbcType=INTEGER},
+      role = #{record.role,jdbcType=VARCHAR},
       isValidate = #{record.isvalidate,jdbcType=INTEGER}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -208,7 +222,7 @@
         telephone = #{telephone,jdbcType=VARCHAR},
       </if>
       <if test="role != null" >
-        role = #{role,jdbcType=INTEGER},
+        role = #{role,jdbcType=VARCHAR},
       </if>
       <if test="isvalidate != null" >
         isValidate = #{isvalidate,jdbcType=INTEGER},
@@ -221,7 +235,7 @@
     set username = #{username,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
       telephone = #{telephone,jdbcType=VARCHAR},
-      role = #{role,jdbcType=INTEGER},
+      role = #{role,jdbcType=VARCHAR},
       isValidate = #{isvalidate,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>

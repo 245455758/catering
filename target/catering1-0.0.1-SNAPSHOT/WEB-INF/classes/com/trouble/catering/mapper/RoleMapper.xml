@@ -7,6 +7,10 @@
     <result column="desc" property="desc" jdbcType="VARCHAR" />
     <result column="rights" property="rights" jdbcType="VARCHAR" />
   </resultMap>
+  <resultMap id="BaseResultMap1" type="com.trouble.catering.pojo.Role" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="desc" property="desc" jdbcType="VARCHAR" />
+  </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
       <foreach collection="oredCriteria" item="criteria" separator="or" >
@@ -95,6 +99,9 @@
   <select id="selectAllRoles" resultType="com.trouble.catering.pojo.Role">
   	SELECT * FROM role 
   </select>
+  <select id="selectAllIdAndDesc" resultMap="BaseResultMap1">
+  	select id,`desc` from role
+  </select>
   
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from role
@@ -153,6 +160,8 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
+  
+  
   <update id="updateByExampleSelective" parameterType="map" >
     update role
     <set >

@@ -36,4 +36,31 @@ public class UserServiceImpl implements UserService {
 		}
 	}
 
+	@Override
+	public List<User> findAll() {
+		UserExample example = new UserExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andIsvalidateEqualTo(1);
+		return userMapper.selectByExample(example );
+	}
+
+	@Override
+	public int addUser(User user) {
+		return userMapper.insert(user);
+	}
+	
+	public int deleteUser(int id) {
+		return userMapper.deleteByPrimaryKey(id);
+	}
+
+	@Override
+	public int updateUser(User user) {
+		return userMapper.updateByPrimaryKey(user);
+	}
+
+	@Override
+	public String findPasswordById(int id) {
+		return userMapper.selectPasswordById(id);
+	}
+
 }

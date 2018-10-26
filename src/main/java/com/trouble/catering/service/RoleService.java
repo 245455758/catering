@@ -11,6 +11,8 @@ public interface RoleService {
 	
 	public List<Role> findAll();
 	
+	public List<Role> findAllIdAndDesc();
+	
 	public int addRole(Role role);
 	
 	public int updateRole(Role role);

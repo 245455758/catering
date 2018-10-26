@@ -11,6 +11,11 @@
     <result column="s_id" property="sId" jdbcType="VARCHAR" />
     <result column="name" property="name" jdbcType="VARCHAR" />
   </resultMap>
+  <resultMap id="BaseResultMap3" type="com.trouble.catering.pojo.Resource" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="s_id" property="sId" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+  </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
       <foreach collection="oredCriteria" item="criteria" separator="or" >
@@ -86,6 +91,10 @@
   <select id="selectAllIdAndName"  resultMap="BaseResultMap2">
   	select s_id,name from resource
   </select>
+  <select id="selectAllIdsAndName"  resultMap="BaseResultMap3">
+  	select id,s_id,name from resource
+  </select>
+  
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
