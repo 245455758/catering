@@ -1,2 +1,4 @@
-# catering
-这是Javaweb课设的大作业
+# catering  餐饮服务系统
+![logo](/tree/master/src/main/resources/images)
+
+
