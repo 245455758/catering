@@ -1,4 +1,4 @@
 # catering  餐饮服务系统
-![logo](/tree/master/src/main/resources/images)
+![logo](https://github.com/245455758/catering/blob/master/src/main/resources/images/carting.png)
 
 
