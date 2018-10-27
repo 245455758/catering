@@ -14,6 +14,8 @@ public interface ShopService {
 
 	public List<Shop> findAllCheckedShop();
 	
+	public List<Shop> findShopIdByUserId(int user_id);
+	
 	
 
 }

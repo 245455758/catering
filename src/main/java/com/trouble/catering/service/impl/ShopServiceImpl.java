@@ -42,4 +42,12 @@ public class ShopServiceImpl implements ShopService {
 		return shopMapper.selectByExample(example );
 	}
 
+	@Override
+	public List<Shop> findShopIdByUserId(int user_id) {
+		ShopExample example = new ShopExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andUserIdEqualTo(user_id);
+		return shopMapper.selectByExample(example );
+	}
+
 }

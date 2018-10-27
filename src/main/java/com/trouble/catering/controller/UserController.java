@@ -1,6 +1,7 @@
 package com.trouble.catering.controller;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -62,12 +63,27 @@ public class UserController {
 			if(indexOf<0) {
 				Set rightsSet = roleService.getRights(Integer.parseInt(user.getRole()));
 				Map map = new HashMap();
-				map.put("rights", rightsSet);
 				map.put("res", true);
+				map.put("rights", rightsSet);
+				map.put("userId", user.getId());
+				Object json = JSON.toJSON(map);
+				return json;
+			}else {
+				String[] roles = user.getRole().split(",");
+				Set rightsSet = new HashSet();
+				for (String string : roles) {
+					Set right = roleService.getRights(Integer.parseInt(string));
+					for (Object object : right) {
+						rightsSet.add(object);
+					}
+				}
+				Map map = new HashMap();
+				map.put("res", true);
+				map.put("rights", rightsSet);
+				map.put("userId", user.getId());
 				Object json = JSON.toJSON(map);
 				return json;
 			}
-			return null;
 		}else {
 			Map map = new HashMap();
 			map.put("res", false);

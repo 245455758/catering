@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.trouble.catering.entity.Result;
+import com.trouble.catering.mapper.ShopperDetailMapper;
 import com.trouble.catering.pojo.Shop;
+import com.trouble.catering.pojo.ShopperDetail;
 import com.trouble.catering.service.ShopService;
 
 @RestController
@@ -20,6 +22,9 @@ public class ShopController {
 	
 	@Autowired
 	private ShopService shopService;
+	
+	@Autowired
+	private ShopperDetailMapper shopperDetailMapper;
 	
 	@RequestMapping("/showAll")
 	@ResponseBody
@@ -54,6 +59,17 @@ public class ShopController {
 		}else {
 			return new Result(false,"更新失败");
 		}
+	}
+	
+	@RequestMapping("/showDetail")
+	@ResponseBody
+	public ShopperDetail showDetail(@RequestBody String str) {
+		JSONObject jsonStr = JSON.parseObject(str);
+		Integer id = jsonStr.getInteger("id");
+		
+		int s_id = shopService.findShopIdByUserId(id).get(0).getId();
+		
+		return shopperDetailMapper.selectByPrimaryKey(s_id);
 	}
 
 }

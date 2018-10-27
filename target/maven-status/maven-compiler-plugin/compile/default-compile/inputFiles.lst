@@ -3,6 +3,7 @@ G:\Java_program\catering1\src\main\java\com\trouble\catering\controller\RoleCont
 G:\Java_program\catering1\src\main\java\com\trouble\catering\service\GoodsService.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\mapper\GoodsMapper.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\ResourceExample.java
+G:\Java_program\catering1\src\main\java\com\trouble\catering\mapper\ShopperDetailMapper.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\service\impl\UserServiceImpl.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\service\RoleService.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\entity\Result.java
@@ -35,7 +36,9 @@ G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\Resource.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\ShopExample.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\service\ShopService.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\controller\GoodsController.java
+G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\ShopperDetail.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\controller\UserController.java
+G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\ShopperDetailExample.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\pojo\User.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\service\impl\ShopServiceImpl.java
 G:\Java_program\catering1\src\main\java\com\trouble\catering\mapper\UserDetailMapper.java
